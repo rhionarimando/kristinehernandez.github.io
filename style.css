@@ -1,0 +1,932 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: auto;
+  height: auto;
+  /* font-size: 18px; */
+  font-family: "Noto Sans";
+  background-image: url(gif.gif);
+}
+
+#red-text {
+    color: #ff5a6e;
+}
+
+#title-text-separator {
+  width: 5%;
+  margin-top: 1%;
+  border: solid 1px #ff5a6e;
+}
+
+.responsive-menu-link {
+  color: black;
+}
+
+
+/* ----- General Header CSS ------ */
+
+#header {
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  font-size: 19px;
+  min-height: 100px;
+}
+
+
+
+
+
+/* Normal Header */
+
+
+.active-header {
+  background-color: white;
+  color: black;
+}
+li a:hover {
+	
+	color: #ff5a6e;
+}
+.menu-link {
+  color: white;
+}
+
+.active-menu-links {
+  color: black;
+}
+
+#normal-header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  font-size: 19px;
+  min-height: 100px;
+}
+
+#header-img {
+  width: 250px;
+  margin-left: 15%;
+}
+
+#nav-bar {
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+}
+
+#nav-bar li {
+  padding: 10px;
+  margin: 12px;
+}
+
+#nav-bar ul, a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Responsive Header */
+
+#responsive-header {
+  display: none;
+}
+
+#image-button-black {
+  display: none;
+  border: none;
+}
+
+#image-button-black:hover {
+  cursor: pointer;
+}
+
+#image-button-black:focus {
+  outline: 0;
+}
+
+
+
+
+
+/* ----- Hero Header CSS -----*/
+
+
+#particles-js{
+    background-color: black;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+}
+#hero-header {
+  /* width: 100vw; */
+  height: 100vh;
+  box-shadow: 3px 3px 2px #bebebe;
+
+  /* hero-header flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Texy style */
+  text-align: center;
+  color: white;
+
+  /* Background image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/lol.gif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#hero-title {
+  font-size: 3.5em;
+  top:200px;
+}
+
+#hero-text {
+  font-size: 1.3em;
+  margin-top: 2%;
+}
+
+#hero-button {
+  border: solid 2px white;
+  background-color: inherit;
+  color: white;
+  margin-top: 6%;
+  width: 25%;
+  height: 55px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#hero-button:hover {
+  cursor: pointer;
+}
+
+
+
+.round-button {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	border-radius: 50%;
+	color: black;
+	text-decoration: none;
+	background: #fff;
+  margin-top: 25px;
+  margin: 20px 0 20px;
+  padding: 5px;
+	font-size: 3.75rem;
+	border: 3px solid #222;
+	transition: background-color 1s, color 1s, font-size 1s, border-color .5s;
+}
+.round-button:hover {
+	background-color: white;
+	color: #fff;
+	font-size: 4rem;
+	border-color: #fff;
+	text-align: center;
+}
+
+
+
+
+
+
+/* ----- Main Content CSS -----*/
+
+#features-container {
+  box-shadow: 2px 2px 15px #bebebe;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+#service-features {
+  display: flex;
+  flex-direction: row;
+  /* Change flow-direction to "column" in the responsive design for the features to stack
+  one on top of another. */
+  justify-content: space-around;
+  margin-top: 2%;
+  padding-bottom: 3%;
+}
+
+#features-description {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  display: flex;
+  width: 60%;
+}
+
+#features-description h1 {
+  font-size: 45px;
+}
+
+#features-description p {
+  padding: 1%;
+  margin-top: 1%;
+}
+
+#feature {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #bebebe;
+  box-shadow: 1px 2px 15px #bebebe;
+}
+
+#feature img {
+  max-width: 30%;
+  max-height: 30%;
+  padding-top: 5%;
+}
+
+#feature-title {
+  margin-top: 5%;
+}
+
+#feature p {
+  width: 70%;
+  margin-top: 5%;
+}
+
+#feature-button {
+  border: none;
+  margin-top: 30%;
+  width: 12vh;
+  height: 5vh;
+  border-radius: 15px;
+  background-color: #ff5a6e;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20%;
+}
+
+#feature-button:hover {
+  background-color: #ff7b8b;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+#presentation-container {
+  display: flex;
+  flex-flow: column;
+}
+
+#presentation-title-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  width: 60%;
+}
+
+#presentation-title-description h1 {
+  font-size: 45px;
+}
+
+#presentation-title-description p {
+  margin-top: 1%;
+}
+
+#section-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-button {
+  border: none;
+  border-radius: 10px;
+  background-color: inherit;
+  box-shadow: 1px 2px 15px #bebebe;
+  padding: 15px;
+  width: 10%;
+  margin: 2%;
+  font-size: 15px;
+}
+
+.product-button:hover {
+  cursor: pointer;
+}
+
+.product-button:focus {
+  outline: 0;
+}
+
+.product-button-active {
+  background-color: #ff5a6e;
+  color: white;
+}
+/*--container*/
+
+
+.container {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.container .card .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.7s;
+  z-index: 1;
+}
+
+.container .card:nth-child(1) .icon {
+  background: #e07768;
+}
+
+.container .card:nth-child(2) .icon {
+  background: #6eadd4;
+}
+
+.container .card:nth-child(3) .icon {
+  background: #4aada9;
+}
+
+
+.container .card .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.7s;
+  color: #fff;
+}
+
+i {
+  position: absolute;
+  
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.7s;
+  color: #fff;
+}
+
+.container .card .face {
+  width: 284px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+  background: #ff0057;
+  transform: translateY(0px);
+}
+
+.container .card .face.face1 .content {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.container .card .face.face1 .content i{
+  max-width: 50px;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+  transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #414141;
+}
+
+.container .card .face.face2 .content h3 {
+  right: 1px;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  color: #414141;
+} 
+
+.container a {
+  text-decoration: none;
+  color: #414141;
+}
+
+.content h3{
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+padding: 10px;
+}
+.content .img{
+width: 50px;
+bottom: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media - Video Section CSS--*/
+
+
+#main-media-container {
+  box-shadow: 2px 2px 15px #bebebe;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#media-title-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4%;
+  width: 90%;
+}
+
+#media-title-description h1 {
+  font-size: 45px;
+}
+
+#media-title-description p {
+  margin-top: 1%;
+}
+
+
+
+
+
+#slideshow {
+	
+	padding-top: 30px;
+	height: 250px;
+	width: 100%;
+
+	box-sizing: border-box;
+  bottom: 0px;
+}
+#show {
+	padding-top: 10px;
+	height: 15px;
+	width: 150%;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+#slide {
+	padding-top: 0px;
+	height: 200px;
+	width: 50%;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.slideshow-title {
+	font-family: 'Allerta Stencil';
+	font-size: 62px;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25%;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+.sub-heading {
+	padding-top: 50px;
+	font-size: 18px;
+} .sub-heading-two {
+	font-size: 15px;
+} .sub-heading-three {
+	font-size: 13px;
+} .sub-heading-four {
+	font-size: 11px;
+} .sub-heading-five {
+	font-size: 9px;
+} .sub-heading-six {
+	font-size: 7px;
+} .sub-heading-seven {
+	font-size: 5px;
+} .sub-heading-eight {
+	font-size: 3px;
+} .sub-heading-nine {
+	font-size: 1px;
+}
+
+.entire-content {
+	margin: auto;
+	width: 190px;
+	perspective: 1000px;
+	position: relative;
+	padding-top: 50px;
+}
+
+.content-carrousel {
+	width: 100%;
+	position: absolute;
+	float: right;
+	animation: rotar 15s infinite linear;
+	transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.content-carrousel figure {
+	width: 100%;
+	height: 130px;
+	border: 1px solid #3b444b;
+	overflow: hidden;
+	position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+	transform: rotateY(0deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(2) {
+	transform: rotateY(40deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(3) {
+	transform: rotateY(80deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(4) {
+	transform: rotateY(120deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(5) {
+	transform: rotateY(160deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(6) {
+	transform: rotateY(200deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(7) {
+	transform: rotateY(240deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(8) {
+	transform: rotateY(280deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(9) {
+	transform: rotateY(320deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(10) {
+	transform: rotateY(360deg) translateZ(300px); 
+} 
+
+.shadow {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 1px;
+}
+
+.content-carrousel img {
+	image-rendering: auto;
+	transition: all 100ms;
+	width: 100%;
+	height: 100%;
+}
+
+.content-carrousel img:hover {
+	transform: scale(1.2);
+	transition: all 300ms;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+
+
+
+/* Prices Section CSS
+
+Tags Included:
+
+1. #prices-section-container - main container of the price section
+
+2. #prices-title-description - container where the title and description are
+
+3. #prices-title-description h1 - main title of the "Prices" section
+
+4. #prices-separator - Separator between title and description
+
+5. #prices-title-description p - main description of the "Prices" section
+
+6. #all-prices-container - container where all the divs with prices are
+
+7. .price-container - common class used to style the containers of each price
+
+8. .price-container h1 - title of each price (starter/premium/professional)
+
+9. .price-container h2 - subtitle of each price ($55/$85/$120)
+
+10. .price-container p - monthly payment text style
+
+11. .price-container hr - prices separator style
+
+12. .price-container ul - the list with features of each price
+
+13. .price-container li - each individual item on the list with features for each price
+
+14. .price-container button - style of each button of each price section
+
+15. .price-container button:hover - the hover state of each button of each price
+
+16. #price-container-two - the price container in the middle, placed a little higher than the others
+
+*/
+
+#prices-section-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 3%;
+}
+
+#prices-title-description {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+}
+
+#prices-title-description h1 {
+  font-size: 45px;
+}
+
+#prices-separator {
+  width: 5%;
+  margin-top: 2%;
+  border: solid 1px #ff5a63;
+}
+
+#prices-title-description p {
+  margin-top: 1%;
+}
+
+#all-prices-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.price-container {
+  box-shadow: 2px 2px 15px #bebebe;
+  text-align: center;
+  margin-top: 7%;
+  width: 27%;
+}
+
+.price-container h1 {
+  color: #ff5a63;
+  font-size: 45px;
+  margin-top: 6%;
+}
+
+.price-container h2 {
+  color: #323a45;
+  font-size: 40px;
+  margin-top: 4%;
+}
+
+.price-container p {
+  margin-top: 4%;
+  font-size: 17px;
+}
+
+.price-container hr{
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 70%;
+  border: solid 0.5px #c1c1c1;
+}
+
+.price-container ul {
+  list-style: none;
+}
+
+.price-container li {
+  padding: 3%;
+}
+
+.price-container button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5a6e;
+  box-shadow: 1px 2px 15px #bebebe;
+  padding: 15px;
+  width: 30%;
+  margin-top: 6%;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 6%;
+}
+
+.price-container button:hover {
+  cursor: pointer;
+  background-color: #ff7b8b;
+}
+
+#price-container-two {
+  margin-top: 4%;
+}
+
+
+
+
+/* Newsletter Section CSS
+
+Tags included:
+
+1. #newsletter-container - main newsletter section container
+
+2. #newsletter-title-description - container with the main title and description
+
+3. #newsletter-title-description h1 - styling for the main title
+
+4. #newsletter-input-container - container with the form and input elements
+
+5. #email-form - the id given to the <form> tag
+
+6. #email-form label - styling of the label before the <input> tag
+
+7. #email-input - id of the <input> tag where the email will be written
+
+8. #email-form button - styling of the "submit" button after the <input> tag
+
+9. #email-form button:hover - styling for the hover state of the button
+
+*/
+
+#newsletter-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+#newsletter-title-description {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+}
+
+#newsletter-title-description h1 {
+  font-size: 45px;
+}
+
+#email-input-container {
+  margin-top: 1%
+}
+
+#email-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#email-form label {
+  font-size: 20px;
+}
+
+#email {
+  font-size: 18px;
+  margin-top: 4%;
+  padding: 3%;
+  width: 150%;
+}
+
+#submit {
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5a6e;
+  box-shadow: 1px 2px 15px #bebebe;
+  font-size: 16px;
+  color: white;
+  margin-top: 5%;
+  padding: 15px;
+  width: 40%;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #ff7b8b;
+}
+
+
+
+/* Footer Section */
+
+footer {
+  box-shadow: 1px 2px 15px #bebebe;
+  margin-top: 4%;
+  color: #858585;
+  text-align: center;
+}
+
+footer p {
+  padding: 0.5%;
+}
+
+
+
+
+
+
+
+
+
